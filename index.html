@@ -1,70 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Media</title>
-    <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/abab928096.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- style -->
-    <link rel="stylesheet" href="./styles/index.css" />
-  </head>
-  <body>
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Inner wrapper -->
-      <main>
-        <!-- Header -->
-        <header>
-          <h4>Social Media Application</h4>
-        </header>
-        <!-- row -->
-        <div class="row">
-          <!-- wrapper for the form -->
-          <div class="form-container">
-            <form action="">
-              <p>Write Your Post Here.</p>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="What's on Your Mind"
-              ></textarea>
-              <button type="submit">Post</button>
-            </form>
-          </div>
-          <!-- wraper fpr the posts -->
-          <div class="post-container">
-            <h4>Your Posts here</h4>
-            <ul>
-              <li>
-                Weekend vibing
-                <span
-                  ><i class="fas fa-pen"></i> <i class="fas fa-trash"></i
-                ></span>
-              </li>
-              <li>
-                Weekend vibing<span
-                  ><i class="fas fa-pen"></i> <i class="fas fa-trash"></i
-                ></span>
-              </li>
-              <li>
-                Weekend vibing<span
-                  ><i class="fas fa-pen"></i> <i class="fas fa-trash"></i
-                ></span>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media</title>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/abab928096.js" crossorigin="anonymous"></script>
+
+  <!-- style -->
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Inner wrapper -->
+    <main>
+      <!-- Header -->
+      <header>
+        <h4>Social Media Application</h4>
+      </header>
+      <!-- row -->
+      <div class="row">
+        <!-- wrapper for the form -->
+        <div class="form-container">
+          <form action="" id="form">
+            <p>Write Your Post Here.</p>
+            <textarea name="" id="input" cols="30" rows="10" placeholder="What's on Your Mind"></textarea>
+            <button type="submit">Post</button>
+          </form>
         </div>
-      </main>
-    </div>
-    <!-- Script source -->
-    <script src="./scripts/index.js"></script>
-  </body>
+        <!-- wraper fpr the posts -->
+        <div class="post-container">
+          <h4>Your Posts here</h4>
+          <ul id="post-list">
+            <li>
+              Weekend vibing
+              <span><i class="fas fa-pen"></i> <i class="fas fa-trash"></i></span>
+            </li>
+            <li>
+              Weekend vibing<span><i class="fas fa-pen"></i> <i class="fas fa-trash"></i></span>
+            </li>
+            <li>
+              Weekend vibing<span><i class="fas fa-pen"></i> <i class="fas fa-trash"></i></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Script source -->
+  <script src="./scripts/index.js"></script>
+</body>
+
 </html>
