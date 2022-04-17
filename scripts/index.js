@@ -1,29 +1,27 @@
 // Javascript
 let form = document.getElementById("form");
-let input = document.getElementById("input").value;
+var input = document.getElementById("input");
 let posts = document.getElementById("posts");
-let post = {};
+var postArray = []
 let postList = document.getElementById("post-list");
+
+
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
     if (input === "") {
-        alert("Post Cannot be Empty!")
-
+        alert("Please enter a post");
     } else {
-        post['text'] = input;
-        createPost();
+        var inputValue = input.value
+        postArray.push(input.value);
+        inputValue = "";
 
+        postList.innerHTML += ` <li>
+        ${postArray[postArray.length - 1]}<span><i class="fas fa-pen"></i> <i class="fas fa-trash"></i></span>
+      </li>`
     }
 });
 
 
-function createPost() {
-    postList.innerHTML += `<li>
-    ${post.text}
-    <span
-      ><i class="fas fa-pen"></i> <i class="fas fa-trash"></i
-    ></span>
-  </li>`;
-    input = "";
-}
+
+
