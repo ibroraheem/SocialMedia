@@ -17,8 +17,12 @@ form.addEventListener("submit", (event) => {
     postList.innerHTML += ` <li>
         ${
           postArray[postArray.length - 1]
-        }<span><i class="fas fa-pen"></i> <i class="fas fa-trash"></i></span>
+        }<span><i class="fas fa-pen"></i> <i onClick="deletePost(this)" class="fas fa-trash"></i></span>
       </li>`;
     input.value = "";
   }
 });
+
+let deletePost = (e) => {
+  e.parentElement.parentElement.remove();
+};

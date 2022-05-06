@@ -66,9 +66,11 @@ span i {
 }
 .fa-pen {
   color: #008753;
+  cursor: pointer;
 }
 .fa-trash {
   color: rgb(185, 2, 2);
+  cursor: pointer;
 }
 
 /* Media responsiveness*/
