@@ -22,6 +22,10 @@ form.addEventListener("submit", (event) => {
     }
 });
 
+let deletePost = (e) => {
+  e.parentElement.parentElement.remove();
+};
+
 
 
 
